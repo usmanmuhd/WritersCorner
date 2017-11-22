@@ -1,0 +1,16 @@
+{% extends "header.html" %}
+{% block content %}
+<script src="{{url_for('static', filename='ckeditor/ckeditor.js')}}" charset="utf-8"></script>
+<form class="" action="" method="post">
+<center><input type="text" name="title" id='title' value="{{ aarticle[0].title }}" placeholder="Title" disabled></center>
+<textarea name="content" id="content" rows="80" cols="80" disabled>{{ aarticle[0].content }}</textarea>
+<script type="text/javascript">
+  CKEDITOR.replace('content', {
+    removeButtons: 'About,Source'})
+    function send() {
+      var el = document.getElementsByClassName('text-box')
+      document.getElementById('submit').value = el.innerHTML
+    }
+</script>
+</form>
+{% endblock %}

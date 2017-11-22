@@ -1,0 +1,11 @@
+{% extends "header.html" %}
+{% block content %}
+  {% for user in users %}
+    <a id='userss' href='{{ url_for('user', user=user.username) }}'><div class="user">
+      <h2>Name: {{ user.name }}</h2>
+      <h3>Username: {{ user.username }}</h3>
+      <h3>Email Id: {{ user.email }}</h3>
+    </div>
+  </a>
+  {% endfor %}
+{% endblock %}

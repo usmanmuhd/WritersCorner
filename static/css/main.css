@@ -1,0 +1,187 @@
+nav {
+  margin: 0;
+  padding: 0px;
+  background-color: #D3D3D3;
+  overflow: hidden;
+}
+
+nav a {
+  color: #000;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: block;
+  float: left;
+  text-align: center;
+  font-family: arial;
+}
+
+nav a:hover:not(.active) {
+  background-color: red;
+}
+
+#rightFloat {
+  float: right;
+}
+
+body {
+  margin: 0;
+}
+
+.AfterNav {
+  display: block;
+  border-top: 3px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  margin-left: 2%;
+  display: inline-block;
+}
+
+.heading h1 {
+  font-size: 2.5em;
+  font-family: arial;
+}
+
+.heading hr {
+  border-top: 2px solid red;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 90%
+  display: inline-block;
+  align-self: center;
+}
+
+.content a {
+  text-decoration: none;
+  margin: 5px;
+  padding: 5px;
+}
+
+.article {
+  margin-left: 2%;
+  width: 80%;
+  margin-top: 3px;
+  border-bottom: 1px solid red;
+  display: inline-block;
+  float: left;
+  padding: 5px;
+}
+
+.article:hover {
+  background-color: #faebd7;
+}
+
+.article h1 {
+  font-family: sans-serif;
+}
+
+.article h1:after  {
+  width: 500px;
+  content:' ';
+  border: 1px dashed red;
+  display: block;
+}
+
+.article h4 {
+  padding: 0;
+}
+
+.article button {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid red;
+  background-color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: red;
+  border-radius: 10px;
+}
+
+.article button:hover {
+  background-color: #f5f5dc;
+}
+
+.article p {
+  font-family: sans-serif;
+}
+
+aside {
+  margin-right: 3%;
+  padding: 2%;
+  padding-right: 5%;
+  border: 2px solid red;
+  display: inline-block;
+  float: right;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#title {
+  text-align: center;
+  margin: 10px;
+  padding: 5px;
+  width: 80%;
+  height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+#title:focus {
+  border-color: red;
+}
+
+.signup {
+  margin: 0 auto;
+  width: 40%;
+  text-align: center;
+  margin-top: 10%;
+  border: 2px dashed red;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.signup input {
+  width: 90%;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.signup input[type=checkbox] {
+  width: 5%;
+}
+
+#submit {
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.flashedMessages {
+  margin: 5px;
+  padding: 10px;
+  background-color: yellow;
+  border-radius: 5px;
+}
+
+.articlecont {
+  font-weight: normal;
+}
+
+.user {
+  border: 2px dashed red;
+  margin: 5px;
+  padding: 10px;
+  width: 20%;
+}
+
+#userss {
+  text-decoration: none;
+  color: black;
+}

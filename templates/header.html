@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ header }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body>
+    <nav class="topnav" id="myTopnav">
+      <a href="{{ url_for('index') }}">Home</a>
+      {% if not session['username'] %}
+      <a href="{{ url_for('sign_up') }}">SignUp</a>
+      <a href="{{ url_for('login') }}" id='rightFloat'>Login</a>
+      {% else %}
+      <a href="{{url_for('new')}}">New Article</a>
+      <a href="{{ url_for('logout') }}" id="rightFloat">LogOut</a>
+      {% endif %}
+    </nav>
+    <hr class='AfterNav'>
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+    {% for message in messages %}
+    <div class="flashedMessages">
+        {{message}}
+    </div>
+
+  {% endfor %}
+  {% endif %}
+  {% endwith %}
+    {% block content %}
+    {% endblock %}
+    <script src="{{ url_for('static', filename='js/script.js') }}" charset="utf-8"></script>
+  </body>
+</html>

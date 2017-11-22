@@ -1,0 +1,10 @@
+{% extends "header.html" %}
+{% block content %}
+  <form class="signup" action="{{url_for('sign_up')}}" method="post">
+    <input type="text" name="username" value="" placeholder="Enter Username"><br>
+    <input type="password" name="password" value="" placeholder="Enter Password"><br>
+    <input type="text" name="name" value=""  placeholder="Enter Name"><br>
+    <input type="email" name="email" value=""  placeholder="Enter Email"><br>
+    <input id="submit" type="submit" name="" value="Submit">
+  </form>
+{% endblock %}
